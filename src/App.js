@@ -1,11 +1,9 @@
-import './App.css'
-
+import TheCV from './components/CV'
 function App() {
     return (
-        <div className='App'>
-            <header className='App-header'>
-                <h1>Hi! My name is Christian Martinez</h1>
-            </header>
+        <div>
+            <h1>Hi! My name is Christian Martinez</h1>
+            <TheCV />
         </div>
     )
 }
