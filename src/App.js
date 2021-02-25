@@ -1,13 +1,6 @@
-import './App.css'
-
+import Resume from './components/resume'
 function App() {
-    return (
-        <div className='App'>
-            <header className='App-header'>
-                <h1>Hi! My name is Christian Martinez</h1>
-            </header>
-        </div>
-    )
+    return <Resume />
 }
 
 export default App
