@@ -403,7 +403,7 @@ ul.courses li:hover {
     .institution::before,
     .organization::before,
     .awarder::before {
-        content: '| ';
+        content: '\00a0 | ';
     }
 
     .header-left {
