@@ -1,0 +1,244 @@
+{
+    "basics": {
+        "name": "Christian Martinez",
+        "label": "Senior Frontend Engineer",
+        "email": "christian.dario.martinez@gmail.com",
+        "phone": "(+34) 634854678",
+        "summary": "My purpose is to use my knowledge in both Software and Product Development to make a difference in teams and products. I believe that with my versatility, my experience, and my 'keep-learning attitude', I'm capable of improving not only the quality of a certain source code but the processes involved and the coherence in software teams.",
+        "location": {
+            "address": "Carrer del Bruc 94",
+            "postalCode": "08009",
+            "city": "Barcelona",
+            "countryCode": "Spain",
+            "region": "Barcelona"
+        },
+        "profiles": [
+            {
+                "network": "Linkedin",
+                "username": "Christian Martinez",
+                "url": "https://www.linkedin.com/in/christian-dario-martinez"
+            },
+            {
+                "network": "Twitter",
+                "username": "Christian (with H)",
+                "url": "https://twitter.com/with_hache"
+            }
+        ]
+    },
+    "education": [
+        {
+            "institution": "Universidad Nacional de Córdoba",
+            "studyType": "MSc Degree in Computer Engineering",
+            "endDate": "2010-10-01",
+            "location": {
+                "city": "Córdoba",
+                "countryCode": "Argentina",
+                "region": "Córdoba"
+            }
+        }
+    ],
+    "work": [
+        {
+            "company": "FREE NOW (formerly mytaxi)",
+            "position": "Product Manager",
+            "website": "https://www.free-now.com",
+            "startDate": "2019-07-01",
+            "highlights": [
+                "Building reports and tools to ensure proper tasks and data tracking",
+                "Understanding and defining hypotheses/problems worth solving",
+                "Defining the product roadmap and prioritizing the backlog work of the technical team",
+                "Aligning both Discovery and Delivery teams to make sure they understand the 'why are we doing what we're doing'",
+                "Ensuring product quality of the team's deliverables"
+            ],
+            "keywords": [
+                "hypothesis testing",
+                "user-testing",
+                "discovery and delivery",
+                "Tableau",
+                "SQL",
+                "React",
+                "Git"
+            ]
+        },
+        {
+            "company": "myTaxi - The Taxi App",
+            "position": "Senior Frontend Engineer",
+            "website": "https://www.mytaxi.com",
+            "startDate": "2017-07-01",
+            "endDate": "2020-03-24",
+            "highlights": [
+                "Implemented changes on products related to FREE NOW Driver Registration and internal tooling using React, Redux, styled-components, and react-testing-lib",
+                "Implemented changes on an internal reusable components library used by several tools across the company",
+                "Implemented changes on a custom shareable React-Native lib used by Driver App",
+                "Provided mentoring, guidance, and support for junior developers in good testing practices, including unit, integration, and E2E tests."
+            ],
+            "keywords": [
+                "React",
+                "React Native",
+                "Redux",
+                "styled-components",
+                "Docker",
+                "Node.js",
+                "Git",
+                "Flow & Typescript"
+            ]
+        },
+        {
+            "company": "Globant",
+            "position": "Senior Frontend Engineer | Web UI Team Leader for",
+            "website": "http://www.espn.com/fantasy",
+            "startDate": "2017-07-01",
+            "endDate": "2018-02-03",
+            "highlights": [
+                "Managed and mentored a remote team of four Web UI developers",
+                "Led the Web UI team through sprints to deliver features requested by ESPN in the agreed timeline",
+                "Implemented features for the new React-based ESPN fantasy baseball web draft client from scratch.",
+                "Implemented code changes in the product using React, Mobx and Next as base UI technologies",
+                "Participated in the architecture, pattern, and code styles throughout the main product"
+            ],
+            "keywords": [
+                "React",
+                "React Storybook",
+                "Mobx",
+                "Styled-jsx",
+                "NextJS",
+                "Enzyme & Chai (for frontend testing)",
+                "CSS",
+                "CSS flexbox",
+                "Git"
+            ]
+        },
+        {
+            "company": "Gosoft S.A",
+            "position": "Full Stack Engineer",
+            "startDate": "2016-03-01",
+            "endDate": "2017-05-31",
+            "highlights": [
+                "Performed full-stack development on two projects (CocoBongo.com rebuild and CocoBongo Entrance Checker app) with Javascript, AngularJS, Ionic, C#, and SQL using TDD techniques.",
+                "Implemented Cocobongo's new tracking system for buyer experience optimization with AngularJS and Google Analytics",
+                "Implemented customer design changes across the entire UI of the project.",
+                "Defined and implemented new features/A-B testings for the website that improved Google AdWords campaigns investment",
+                "Using Google Analytics to analyze interaction and web site usage across the project",
+                "Implemented/maintained full backend code in C# (API coding/integrations and SQL DB schema)"
+            ],
+            "keywords": [
+                "Javascript",
+                "Google Analytics",
+                "AngularJS",
+                "Ionic",
+                "SASS",
+                "C# using Razor Views, .NET Core, and Entity Framework",
+                "SQL Management Studio",
+                "Git"
+            ]
+        },
+        {
+            "company": "Gosur",
+            "position": "Frontend Engineer",
+            "website": "http://www.gosur.com",
+            "startDate": "2014-10-01",
+            "endDate": "2016-03-01",
+            "highlights": [
+                "Implemented new features using Web development languages (HTML5, CSS, and Javascript) for multiple projects across the company, with extensive browser support (Internet Explorer 8 and above) for mobile, tablet, and desktop devices.",
+                "Worked side by side with designers to bring design ideas into reality",
+                "Improved the SEO and overall web performance across all the company products by implementing changes on the frontend infrastructure in a rapid-development environment",
+                "Included analytics events to UI components in order to track user behavior",
+                "Collaborated with the Backend team in features E2E, API's definitions and testing"
+            ],
+            "keywords": [
+                "Javascript",
+                "Jquery,",
+                "AngularJS",
+                "Underscore.js",
+                "Modernizr.js",
+                "Bootstrap.js",
+                "Respond.js",
+                "SASS",
+                "Git"
+            ]
+        },
+        {
+            "company": "Intel Corporation",
+            "position": "Software Engineer",
+            "website": "http://www.intel.com",
+            "startDate": "2011-09-01",
+            "endDate": "2014-09-01",
+            "highlights": [
+                "Developed End to end Android + Web App proof the concept for an e-commerce service on the Tizen OS, featuring location based behavior.",
+                "Implementing code using technologies in both backend (nodejitsu, nodes, sailsjs) and frontend (bootstrap, angularjs, leaflet)",
+                "Developed some of the android screens as embedded (webkit) HTML angularjs backend served pages",
+                "Participated in projects related to eCommerce platforms, open-source initiatives (Openstack, and client-side applications)",
+                "Performed Scrum Master tasks in some of the teams"
+            ],
+            "keywords": [
+                "JavaScript",
+                "AngularJS",
+                "Node.js",
+                "Sails.js",
+                "Ionic",
+                "HTML & CSS",
+                "C++",
+                "Python",
+                "Java",
+                "MySQL",
+                "MongoDB",
+                "Android",
+                "Git"
+            ]
+        },
+        {
+            "company": "Intel Corporation",
+            "position": "Junior Software Engineer",
+            "startDate": "2010-04-10",
+            "endDate": "2011-08-10",
+            "highlights": [
+                "Performed development task on a Windows client application (based on C++ and Javascript)",
+                "Performed changes on Windows installers for different devices and configurations",
+                "Participated as security development contact, learning and following security procedures that assured the security level of the product.",
+                "Promoted to Semi-Senior Software Engineer after excelling in both soft (got a 'Discipline Role Mode' award from the company) and hard skills (software development in C++)."
+            ],
+            "keywords": [
+                "JavaScript",
+                "C++",
+                "Bitrock (Windows Installers)",
+                "Windows Registry knowledge",
+                ".NET Framework"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "level": "Master",
+            "keywords": ["Javascript", "ES6", "HTML5", "Git"]
+        },
+        {
+            "level": "Advanced",
+            "keywords": [
+                "React",
+                "Redux",
+                "CSS",
+                "styled-components",
+                "Styled-jsx",
+                "react-testing-library"
+            ]
+        },
+        {
+            "level": "Intermediate",
+            "keywords": ["Node", "NextJS", "React Native", "MySql", "MongoDB"]
+        },
+        {
+            "level": "Beginner",
+            "keywords": ["Docker", "AWS"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        }
+    ]
+}
