@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 const StyledContainer = styled.div`
-    font-size: 1.2em;
+    margin-bottom: 1.2em;
 `
 
 type Item = {
@@ -17,10 +17,13 @@ type Item = {
 }
 
 function WorkExperienceItem({ item, open }: { item: Item; open: boolean }) {
-    const [isOpen, setIsOpen] = useState(open || false)
+    const [isOpen, setOpen] = useState(open || false)
+    const handleClick = () => {
+        setOpen((state) => !state)
+    }
     return (
         <StyledContainer>
-            <header>
+            <header onClick={handleClick}>
                 <span className='space-left'>
                     <span className='fa fa-caret-down'></span>
                 </span>
@@ -46,8 +49,8 @@ function WorkExperienceItem({ item, open }: { item: Item; open: boolean }) {
                 })}
             </ul>
 
-            {isOpen ?? (
-                <div className='item display' style={{ opacity: 1 }}>
+            {isOpen && (
+                <div className='item display'>
                     <ul className='highlights'>
                         {item.highlights.map((prop) => {
                             const key = prop.replace(/\s/g, '').toLowerCase()
