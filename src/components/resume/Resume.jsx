@@ -1,14 +1,14 @@
 import { useRef, useEffect } from 'react'
-import styled from 'styled-components'
 
 import './resume.css'
+import data from '../../data.json'
 
 function Resume() {
     const resume = useRef()
     useEffect(() => {
         resume.current.style.opacity = 1
     }, [])
-
+    console.log(data)
     return (
         <div ref={resume} id='resume'>
             <header id='header' className='clear'>
@@ -145,7 +145,7 @@ function Resume() {
                     </h2>
                 </header>
                 <section id='work'>
-                    <div className='work-experience'>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-down'></span>
@@ -202,8 +202,8 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className='work-experience'>
+                    </strong>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-right'></span>
@@ -263,8 +263,8 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className='work-experience'>
+                    </strong>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-right'></span>
@@ -328,8 +328,8 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className='work-experience'>
+                    </strong>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-right'></span>
@@ -394,8 +394,8 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className='work-experience'>
+                    </strong>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-right'></span>
@@ -461,8 +461,8 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className='work-experience'>
+                    </strong>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-right'></span>
@@ -532,8 +532,8 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className='work-experience'>
+                    </strong>
+                    <strong>
                         <header>
                             <span className='space-left'>
                                 <span className='fa fa-caret-right'></span>
@@ -585,7 +585,7 @@ function Resume() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </strong>
                 </section>
             </section>
 
