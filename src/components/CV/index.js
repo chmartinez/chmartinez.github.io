@@ -1,3 +1,5 @@
+import './cv.css'
+
 function TheCV() {
     return (
         <div id='resume'>
