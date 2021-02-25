@@ -2,5 +2,6 @@
 My personal profile page
 
 # TODO:
-- [ ] Create a dummy page with React Components of my own.
-- [ ] From pure HTML to pure React app
+- [x] Create a dummy page with React Components of my own.
+- [ ] Fix styles on WorkExperienceItem (date format, `position-at-company` spacing, font size)
+- [ ] Change the main header to a React component 
