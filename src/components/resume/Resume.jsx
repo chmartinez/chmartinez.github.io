@@ -142,14 +142,16 @@ function Resume() {
             <section className='section work-experience'>
                 <header>
                     <h2 className='section-title'>
-                        Work Experience <span className='item-count'>(7)</span>
+                        Work Experience{' '}
+                        <span className='item-count'>({data.work.length})</span>
                     </h2>
                 </header>
                 <section id='work'>
-                    {data.work.map((workExperienceItem) => (
+                    {data.work.map((workExperienceItem, index) => (
                         <WorkExperienceItem
                             key={workExperienceItem.id}
                             item={workExperienceItem}
+                            open={index === 0}
                         />
                     ))}
                 </section>
