@@ -1,8 +1,15 @@
+import { useRef, useEffect } from 'react'
+
 import './resume.css'
 
 function Resume() {
+    const resume = useRef()
+    useEffect(() => {
+        resume.current.style.opacity = 1
+    }, [])
+
     return (
-        <div id='resume'>
+        <div ref={resume} id='resume'>
             <header id='header' className='clear'>
                 <div>
                     <h1 className='name'>Christian Martinez</h1>

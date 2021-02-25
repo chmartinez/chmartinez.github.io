@@ -383,6 +383,7 @@ ul.courses li:hover {
     }
 
     #resume {
+        opacity: 0;
         width: 900px;
         margin: 2rem auto;
         -webkit-transition: opacity 0.5s ease-in-out;
