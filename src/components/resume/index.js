@@ -1,6 +1,6 @@
-import './cv.css'
+import './resume.css'
 
-function TheCV() {
+function Resume() {
     return (
         <div id='resume'>
             <header id='header' className='clear'>
@@ -585,9 +585,9 @@ function TheCV() {
                     </div>
                 </section>
             </section>
-            <section className='section'>Powered by jsonresume.org</section>
+            <section className='section'>Built using jsonresume.org</section>
         </div>
     )
 }
 
-export default TheCV
+export default Resume

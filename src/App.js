@@ -1,6 +1,6 @@
-import TheCV from './components/CV'
+import Resume from './components/resume'
 function App() {
-    return <TheCV />
+    return <Resume />
 }
 
 export default App
