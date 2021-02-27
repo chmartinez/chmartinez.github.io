@@ -4,6 +4,25 @@ import styled from 'styled-components'
 const StyledContainer = styled.div`
     margin-bottom: 1.2em;
 `
+const StyledHeader = styled.div`
+    font-size: 1.38em;
+    cursor: pointer;
+
+    .space-left {
+        color: #aaa;
+    }
+
+    /* overriding styles like a boss*/
+    .company::before {
+        content: none;
+    }
+
+    .date {
+        display: block;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+`
 
 type Item = {
     id: string
@@ -23,19 +42,23 @@ function WorkExperienceItem({ item, open }: { item: Item; open: boolean }) {
     }
     return (
         <StyledContainer>
-            <header onClick={handleClick}>
+            <StyledHeader onClick={handleClick}>
                 <span className='space-left'>
-                    <span className='fa fa-caret-down'></span>
+                    <span
+                        className={`fa ${
+                            isOpen ? 'fa-caret-down' : 'fa-caret-right'
+                        }`}
+                    ></span>
                 </span>
-                <div className='position'>{item.position}</div>
-                <div className='company'>{item.company}</div>
+                <div className='position'>{item.position}</div>{' '}
+                <div className='company'>{`at ${item.company}`}</div>
                 <div className='date'>
                     <span className='startDate'>{item.startDate}</span>
                     <span className='endDate'>
                         {` - ${item.endDate ?? 'Current'}`}
                     </span>
                 </div>
-            </header>
+            </StyledHeader>
             {item.website && (
                 <span className='website'>
                     <a href={item.website}>{item.website}</a>

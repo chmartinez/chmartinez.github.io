@@ -43,7 +43,7 @@
             "company": "FREE NOW (formerly mytaxi)",
             "position": "Product Manager",
             "website": "https://www.free-now.com",
-            "startDate": "2019-07-01",
+            "startDate": "July 2019",
             "highlights": [
                 "Building reports and tools to ensure proper tasks and data tracking",
                 "Understanding and defining hypotheses/problems worth solving",
@@ -66,8 +66,8 @@
             "company": "myTaxi - The Taxi App",
             "position": "Senior Frontend Engineer",
             "website": "https://www.mytaxi.com",
-            "startDate": "2017-07-01",
-            "endDate": "2020-03-24",
+            "startDate": "July 2017",
+            "endDate": "March 2020",
             "highlights": [
                 "Implemented changes on products related to FREE NOW Driver Registration and internal tooling using React, Redux, styled-components, and react-testing-lib",
                 "Implemented changes on an internal reusable components library used by several tools across the company",
@@ -88,10 +88,10 @@
         {
             "id": 3,
             "company": "Globant",
-            "position": "Senior Frontend Engineer | Web UI Team Leader for",
+            "position": "Senior Frontend Engineer | Web UI Team Leader for ESPN",
             "website": "http://www.espn.com/fantasy",
-            "startDate": "2017-07-01",
-            "endDate": "2018-02-03",
+            "startDate": "July 2017",
+            "endDate": "February 2018",
             "highlights": [
                 "Managed and mentored a remote team of four Web UI developers",
                 "Led the Web UI team through sprints to deliver features requested by ESPN in the agreed timeline",
@@ -115,8 +115,8 @@
             "id": 4,
             "company": "Gosoft S.A",
             "position": "Full Stack Engineer",
-            "startDate": "2016-03-01",
-            "endDate": "2017-05-31",
+            "startDate": "March 2016",
+            "endDate": "May 2017",
             "highlights": [
                 "Performed full-stack development on two projects (CocoBongo.com rebuild and CocoBongo Entrance Checker app) with Javascript, AngularJS, Ionic, C#, and SQL using TDD techniques.",
                 "Implemented Cocobongo's new tracking system for buyer experience optimization with AngularJS and Google Analytics",
@@ -141,8 +141,8 @@
             "company": "Gosur",
             "position": "Frontend Engineer",
             "website": "http://www.gosur.com",
-            "startDate": "2014-10-01",
-            "endDate": "2016-03-01",
+            "startDate": "October 2014",
+            "endDate": "March 2016",
             "highlights": [
                 "Implemented new features using Web development languages (HTML5, CSS, and Javascript) for multiple projects across the company, with extensive browser support (Internet Explorer 8 and above) for mobile, tablet, and desktop devices.",
                 "Worked side by side with designers to bring design ideas into reality",
@@ -167,8 +167,8 @@
             "company": "Intel Corporation",
             "position": "Software Engineer",
             "website": "http://www.intel.com",
-            "startDate": "2011-09-01",
-            "endDate": "2014-09-01",
+            "startDate": "September 2011",
+            "endDate": "September 2014",
             "highlights": [
                 "Developed End to end Android + Web App proof the concept for an e-commerce service on the Tizen OS, featuring location based behavior.",
                 "Implementing code using technologies in both backend (nodejitsu, nodes, sailsjs) and frontend (bootstrap, angularjs, leaflet)",
@@ -196,8 +196,8 @@
             "id": 7,
             "company": "Intel Corporation",
             "position": "Junior Software Engineer",
-            "startDate": "2010-04-10",
-            "endDate": "2011-08-10",
+            "startDate": "April 2010",
+            "endDate": "August 2011",
             "highlights": [
                 "Performed development task on a Windows client application (based on C++ and Javascript)",
                 "Performed changes on Windows installers for different devices and configurations",
