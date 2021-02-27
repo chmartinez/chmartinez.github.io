@@ -6,6 +6,7 @@ const StyledContainer = styled.div`
 `
 const StyledHeader = styled.div`
     font-size: 1.38em;
+    cursor: pointer;
 
     .space-left {
         color: #aaa;
@@ -43,7 +44,11 @@ function WorkExperienceItem({ item, open }: { item: Item; open: boolean }) {
         <StyledContainer>
             <StyledHeader onClick={handleClick}>
                 <span className='space-left'>
-                    <span className='fa fa-caret-down'></span>
+                    <span
+                        className={`fa ${
+                            isOpen ? 'fa-caret-down' : 'fa-caret-right'
+                        }`}
+                    ></span>
                 </span>
                 <div className='position'>{item.position}</div>{' '}
                 <div className='company'>{`at ${item.company}`}</div>
