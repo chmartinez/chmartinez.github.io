@@ -1,70 +1,23 @@
 import { useRef, useEffect } from 'react'
 
 import './resume.css'
-import data from '../../data.json'
+import datum from '../../data.json'
 import WorkExperienceItem from './WorkExperienceItem'
+import HeaderInfo from './HeaderInfo'
+import type { Resume } from './types'
 
-function Resume() {
+function MyResume() {
     const resume = useRef<HTMLDivElement>(null)
     useEffect(() => {
         if (resume.current) {
             resume.current.style.opacity = '1'
         }
     }, [])
+    const data: Resume = datum
 
     return (
         <div ref={resume} id='resume'>
-            <header id='header' className='clear'>
-                <div>
-                    <h1 className='name'>Christian Martinez</h1>
-                    <h2 className='label'>Senior Frontend Engineer</h2>
-                </div>
-
-                <span className='location'>
-                    <span className='address'>Carrer del Bruc 94, </span>
-                    <span className='postalCode'>08009, </span>
-                    <span className='city'>Barcelona, </span>
-                    <span className='region'>Barcelona </span>
-                    <span className='countryCode'>Spain</span>
-                </span>
-
-                <div id='contact'>
-                    <div className='email'>
-                        <span className='fa fa-envelope-o'></span>
-                        <a href='mailto:christian.dario.martinez@gmail.com'>
-                            christian.dario.martinez@gmail.com
-                        </a>
-                    </div>
-                    <div className='phone'>
-                        <span className='fa fa-mobile'></span>
-                        (+34) 634854678
-                    </div>
-                </div>
-
-                <div id='profiles'>
-                    <div className='item'>
-                        <div className='username'>
-                            <span className='fa fa-linkedin linkedin social'></span>
-                            <span className='url'>
-                                <a href='https://www.linkedin.com/in/christian-dario-martinez'>
-                                    Christian Martinez
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                    <div className='item'>
-                        <div className='username'>
-                            <span className='fa fa-twitter twitter social'></span>
-                            <span className='url'>
-                                <a href='https://twitter.com/with_hache'>
-                                    Christian (with H)
-                                </a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
+            <HeaderInfo data={data.basics} />
             <section className='section main-summary'>
                 <section>
                     <div>
@@ -223,4 +176,4 @@ function Resume() {
     )
 }
 
-export default Resume
+export default MyResume

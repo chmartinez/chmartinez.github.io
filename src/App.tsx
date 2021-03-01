@@ -1,6 +1,6 @@
-import Resume from './components/resume'
+import MyResume from './components/resume'
 function App() {
-    return <Resume />
+    return <MyResume />
 }
 
 export default App
