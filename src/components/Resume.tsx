@@ -3,7 +3,7 @@ import { useRef, useEffect } from 'react'
 import './resume.css'
 import datum from '../data.json'
 import type { Resume } from './resume/types'
-import { HeaderInfo, Skills, WorkExperience } from './resume/'
+import { Education, HeaderInfo, Skills, WorkExperience } from './resume/'
 
 function MyResume() {
     const resume = useRef<HTMLDivElement>(null)
@@ -19,42 +19,7 @@ function MyResume() {
             <HeaderInfo data={data.basics} />
             <Skills skills={data.skills} />
             <WorkExperience experience={data.work} />
-
-            <section className='section education'>
-                <header>
-                    <h2 className='section-title'>
-                        Education <span className='item-count'>(1)</span>
-                    </h2>
-                </header>
-                <section id='education'>
-                    <header className='clear'>
-                        <span className='space-left'>
-                            <span className='fa fa-caret-down'></span>
-                        </span>
-                        <div className='header-left'>
-                            <div className='studyType'>
-                                MSc Degree in Computer Engineering
-                            </div>
-                            <div className='institution'>
-                                Universidad Nacional de Córdoba
-                            </div>
-                        </div>
-                        <div className='date'>
-                            <span className='endDate'>- 2010</span>
-                        </div>
-                    </header>
-
-                    <span className='location'>
-                        <span className='fa fa-map-marker'></span>
-                        <span className='city'>Córdoba,</span>
-                        <span className='countryCode'>(Argentina)</span>
-                        <span className='region'>Córdoba</span>
-                    </span>
-
-                    <div className='item display' style={{ opacity: 1 }}></div>
-                </section>
-            </section>
-
+            <Education educations={data.education} />
             <section className='section languages margin1'>
                 <header>
                     <h2 className='section-title'>Languages</h2>

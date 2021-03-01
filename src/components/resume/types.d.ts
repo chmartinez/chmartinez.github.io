@@ -23,6 +23,7 @@ export type Basics = {
 }
 
 export type Education = {
+    id: string
     institution: string
     studyType: string
     endDate: string
