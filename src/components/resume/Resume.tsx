@@ -5,11 +5,13 @@ import data from '../../data.json'
 import WorkExperienceItem from './WorkExperienceItem'
 
 function Resume() {
-    const resume = useRef()
+    const resume = useRef<HTMLDivElement>(null)
     useEffect(() => {
-        resume.current.style.opacity = 1
+        if (resume.current) {
+            resume.current.style.opacity = '1'
+        }
     }, [])
-    console.log(data)
+
     return (
         <div ref={resume} id='resume'>
             <header id='header' className='clear'>

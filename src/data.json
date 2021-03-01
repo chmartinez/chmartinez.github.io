@@ -39,7 +39,7 @@
     ],
     "work": [
         {
-            "id": 1,
+            "id": "1",
             "company": "FREE NOW (formerly mytaxi)",
             "position": "Product Manager",
             "website": "https://www.free-now.com",
@@ -62,7 +62,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": "2",
             "company": "myTaxi - The Taxi App",
             "position": "Senior Frontend Engineer",
             "website": "https://www.mytaxi.com",
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": "3",
             "company": "Globant",
             "position": "Senior Frontend Engineer | Web UI Team Leader for ESPN",
             "website": "http://www.espn.com/fantasy",
@@ -112,7 +112,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": "4",
             "company": "Gosoft S.A",
             "position": "Full Stack Engineer",
             "startDate": "March 2016",
@@ -137,7 +137,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": "5",
             "company": "Gosur",
             "position": "Frontend Engineer",
             "website": "http://www.gosur.com",
@@ -163,7 +163,7 @@
             ]
         },
         {
-            "id": 6,
+            "id": "6",
             "company": "Intel Corporation",
             "position": "Software Engineer",
             "website": "http://www.intel.com",
@@ -193,7 +193,7 @@
             ]
         },
         {
-            "id": 7,
+            "id": "7",
             "company": "Intel Corporation",
             "position": "Junior Software Engineer",
             "startDate": "April 2010",
