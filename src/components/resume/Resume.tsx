@@ -18,25 +18,6 @@ function MyResume() {
     return (
         <div ref={resume} id='resume'>
             <HeaderInfo data={data.basics} />
-            <section className='section main-summary'>
-                <section>
-                    <div>
-                        <p>
-                            My purpose is to use my knowledge in both Software
-                            and Product Development to make a difference in
-                            teams and products.{' '}
-                        </p>
-                        <p>
-                            I believe that with my versatility, my experience,
-                            and my 'keep-learning attitude', I'm capable of
-                            improving not only the quality of a certain source
-                            code but the processes involved and the coherence in
-                            software teams.
-                        </p>
-                    </div>
-                </section>
-            </section>
-
             <section className='section skills margin1'>
                 <header>
                     <h2 className='section-title'>Skills</h2>
