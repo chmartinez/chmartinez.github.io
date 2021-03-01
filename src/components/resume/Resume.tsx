@@ -4,6 +4,7 @@ import './resume.css'
 import datum from '../../data.json'
 import WorkExperienceItem from './WorkExperienceItem'
 import HeaderInfo from './HeaderInfo'
+import Skills from './Skills'
 import type { Resume } from './types'
 
 function MyResume() {
@@ -18,62 +19,7 @@ function MyResume() {
     return (
         <div ref={resume} id='resume'>
             <HeaderInfo data={data.basics} />
-            <section className='section skills margin1'>
-                <header>
-                    <h2 className='section-title'>Skills</h2>
-                </header>
-                <section id='skills'>
-                    <div className='item'>
-                        <div className='level master'>
-                            <em>Master</em>
-                            <div className='bar'></div>
-                        </div>
-                        <ul className='keywords'>
-                            <li>Javascript</li>
-                            <li>ES6</li>
-                            <li>HTML5</li>
-                            <li>Git</li>
-                        </ul>
-                    </div>
-                    <div className='item'>
-                        <div className='level advanced'>
-                            <em>Advanced</em>
-                            <div className='bar'></div>
-                        </div>
-                        <ul className='keywords'>
-                            <li>React</li>
-                            <li>Redux</li>
-                            <li>CSS</li>
-                            <li>styled-components</li>
-                            <li>styled-jsx</li>
-                            <li>react-testing-library</li>
-                        </ul>
-                    </div>
-                    <div className='item'>
-                        <div className='level intermediate'>
-                            <em>Intermediate</em>
-                            <div className='bar'></div>
-                        </div>
-                        <ul className='keywords'>
-                            <li>Node</li>
-                            <li>NextJS</li>
-                            <li>React Native</li>
-                            <li>MySql</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div className='item'>
-                        <div className='level beginner'>
-                            <em>Beginner</em>
-                            <div className='bar'></div>
-                        </div>
-                        <ul className='keywords'>
-                            <li>Docker</li>
-                            <li>AWS</li>
-                        </ul>
-                    </div>
-                </section>
-            </section>
+            <Skills skills={data.skills} />
 
             <section className='section work-experience'>
                 <header>
