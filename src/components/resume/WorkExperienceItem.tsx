@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-
+import type { Work } from './types'
 const StyledContainer = styled.div`
     margin-bottom: 1.2em;
 `
@@ -24,18 +24,7 @@ const StyledHeader = styled.div`
     }
 `
 
-type Item = {
-    id: string
-    position: string
-    company: string
-    website?: string
-    startDate: string
-    endDate?: string
-    highlights: Array<string>
-    keywords: Array<string>
-}
-
-function WorkExperienceItem({ item, open }: { item: Item; open: boolean }) {
+function WorkExperienceItem({ item, open }: { item: Work; open: boolean }) {
     const [isOpen, setOpen] = useState(open || false)
     const handleClick = () => {
         setOpen((state) => !state)
