@@ -1,5 +1,7 @@
 import type { Skill } from './types'
-function Skills({ skills }: { skills: Array<Skill> }) {
+type Props = { skills: Array<Skill> }
+
+function Skills({ skills }: Props) {
     return (
         <section className='section skills margin1'>
             <header>

@@ -1,4 +1,4 @@
-import MyResume from './components/resume'
+import MyResume from './components/Resume'
 function App() {
     return <MyResume />
 }

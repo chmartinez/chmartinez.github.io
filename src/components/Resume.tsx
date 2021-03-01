@@ -1,11 +1,9 @@
 import { useRef, useEffect } from 'react'
 
 import './resume.css'
-import datum from '../../data.json'
-import WorkExperienceItem from './WorkExperienceItem'
-import HeaderInfo from './HeaderInfo'
-import Skills from './Skills'
-import type { Resume } from './types'
+import datum from '../data.json'
+import type { Resume } from './resume/types'
+import { HeaderInfo, Skills, WorkExperience } from './resume/'
 
 function MyResume() {
     const resume = useRef<HTMLDivElement>(null)
@@ -20,24 +18,7 @@ function MyResume() {
         <div ref={resume} id='resume'>
             <HeaderInfo data={data.basics} />
             <Skills skills={data.skills} />
-
-            <section className='section work-experience'>
-                <header>
-                    <h2 className='section-title'>
-                        Work Experience{' '}
-                        <span className='item-count'>({data.work.length})</span>
-                    </h2>
-                </header>
-                <section id='work'>
-                    {data.work.map((workExperienceItem, index) => (
-                        <WorkExperienceItem
-                            key={workExperienceItem.id}
-                            item={workExperienceItem}
-                            open={index === 0}
-                        />
-                    ))}
-                </section>
-            </section>
+            <WorkExperience experience={data.work} />
 
             <section className='section education'>
                 <header>

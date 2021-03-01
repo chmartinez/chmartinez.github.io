@@ -1,10 +1,11 @@
 import type { Basics } from './types'
+type Props = {
+    data: Basics
+}
 
 function HeaderInfo({
     data: { name, label, location, email, phone, profiles, summary },
-}: {
-    data: Basics
-}) {
+}: Props) {
     return (
         <>
             <header id='header' className='clear'>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import type { Work } from './types'
+import type { Work } from '../types'
+
 const StyledContainer = styled.div`
     margin-bottom: 1.2em;
 `
@@ -23,8 +24,9 @@ const StyledHeader = styled.div`
         font-weight: 600;
     }
 `
+type Props = { item: Work; open: boolean }
 
-function WorkExperienceItem({ item, open }: { item: Work; open: boolean }) {
+function Item({ item, open }: Props) {
     const [isOpen, setOpen] = useState(open || false)
     const handleClick = () => {
         setOpen((state) => !state)
@@ -75,4 +77,4 @@ function WorkExperienceItem({ item, open }: { item: Work; open: boolean }) {
     )
 }
 
-export default WorkExperienceItem
+export default Item
