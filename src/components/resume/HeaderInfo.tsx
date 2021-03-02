@@ -43,7 +43,7 @@ function HeaderInfo({
                         <div className='item' key={profile.url}>
                             <div className='username'>
                                 <span
-                                    className={`fa fa-${profile.network} ${profile.network} social'`}
+                                    className={`fa fa-${profile.network.toLowerCase()} ${profile.network.toLowerCase()} social'`}
                                 ></span>
                                 <span className='url'>
                                     <a href={profile.url}>{profile.username}</a>

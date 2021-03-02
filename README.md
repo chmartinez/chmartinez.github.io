@@ -6,5 +6,11 @@ My personal profile page
 - [x] Fix styles on WorkExperienceItem (date format, `position-at-company` spacing, font size)
 - [x] Make the caret to change when clicked
 - [x] Change the main header to a React component 
-- [] Refactor `Education` so that it can work like the work experience items
-- [] Abstract the div bar in another (common) component and use it on the language and the skills
+- [x] Refactor `Education/WorkExperience` so that it can work like the work experience items
+- [] Fix the alignment of the dates on the ExpandibleListItem
+- [] Abstract the div bar and the keywords in another (common) components
+- [] Fix expand/collapse style issue
+- [] Refactor the entire CSS
+- [] Setup a theme provide
+- [] Create a "dark mode"
+- [] Include a "download/print" option
