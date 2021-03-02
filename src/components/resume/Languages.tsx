@@ -1,5 +1,5 @@
 import type { Language } from './types'
-import ProgressBar from '../common/ProgressBar'
+import { ProgressBar } from '../common/'
 
 type Props = { languages: Array<Language> }
 

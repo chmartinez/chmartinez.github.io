@@ -1,5 +1,5 @@
 import type { Education as EducationType } from './types'
-import ExpandibleListItem from '../common/ExpandibleListItem'
+import { ExpandibleListItem } from '../common/'
 
 type Props = { educations: Array<EducationType> }
 

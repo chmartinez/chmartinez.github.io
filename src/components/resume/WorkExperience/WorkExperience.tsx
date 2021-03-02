@@ -1,6 +1,5 @@
 import type { Work } from '../types'
-import ExpandibleListItem from '../../common/ExpandibleListItem'
-import TagList from '../../common/TagList'
+import { ExpandibleListItem, TagList } from '../../common/'
 
 type Props = { experience: Array<Work> }
 function WorkExperience({ experience }: Props) {

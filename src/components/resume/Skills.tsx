@@ -1,6 +1,5 @@
 import type { Skill } from './types'
-import ProgressBar from '../common/ProgressBar'
-import TagList from '../common/TagList'
+import { ProgressBar, TagList } from '../common/'
 
 type Props = { skills: Array<Skill> }
 
