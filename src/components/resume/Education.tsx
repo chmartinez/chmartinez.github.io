@@ -27,7 +27,13 @@ function Education({ educations }: Props) {
                                         {` at ${education.institution}`}
                                     </div>
                                 </div>
-                                <div className='date'>
+                                <div
+                                    className='date'
+                                    style={{
+                                        display: 'inline',
+                                        float: 'right',
+                                    }}
+                                >
                                     <span className='endDate'>{`${education.endDate}`}</span>
                                 </div>
                             </>

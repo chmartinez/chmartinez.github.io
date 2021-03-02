@@ -7,7 +7,7 @@ My personal profile page
 - [x] Make the caret to change when clicked
 - [x] Change the main header to a React component 
 - [x] Refactor `Education/WorkExperience` so that it can work like the work experience items
-- [] Fix the alignment of the dates on the ExpandibleListItem
+- [x] Fix the alignment of the dates on the ExpandibleListItem
 - [] Abstract the div bar and the keywords in another (common) components
 - [] Fix expand/collapse style issue
 - [] Refactor the entire CSS

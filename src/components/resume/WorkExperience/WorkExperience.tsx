@@ -20,7 +20,13 @@ function WorkExperience({ experience }: Props) {
                             <>
                                 <div className='position'>{item.position}</div>{' '}
                                 <div className='company'>{`at ${item.company}`}</div>
-                                <div className='date'>
+                                <div
+                                    className='date'
+                                    style={{
+                                        display: 'inline',
+                                        float: 'right',
+                                    }}
+                                >
                                     <span className='startDate'>
                                         {item.startDate}
                                     </span>
