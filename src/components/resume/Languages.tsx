@@ -1,4 +1,5 @@
 import type { Language } from './types'
+import ProgressBar from '../common/ProgressBar'
 
 type Props = { languages: Array<Language> }
 
@@ -13,12 +14,10 @@ function Languages({ languages }: Props) {
                     <div className='display' key={language.language}>
                         <h3 className='language'>{language.language}</h3>
                         <div className='item'>
-                            <div
-                                className={`level fluency ${language.fluency.toLowerCase()}`}
-                            >
-                                <em>{language.fluency}</em>
-                                <div className='bar'></div>
-                            </div>
+                            <ProgressBar
+                                label={language.fluency}
+                                progress={language.fluency}
+                            />
                         </div>
                     </div>
                 ))}

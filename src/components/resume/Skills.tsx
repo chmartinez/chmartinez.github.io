@@ -1,4 +1,6 @@
 import type { Skill } from './types'
+import ProgressBar from '../common/ProgressBar'
+
 type Props = { skills: Array<Skill> }
 
 function Skills({ skills }: Props) {
@@ -10,10 +12,10 @@ function Skills({ skills }: Props) {
             <section id='skills'>
                 {skills.map((skill) => (
                     <div className='item' key={skill.level}>
-                        <div className={`level ${skill.level.toLowerCase()}`}>
-                            <em>{skill.level}</em>
-                            <div className='bar'></div>
-                        </div>
+                        <ProgressBar
+                            label={skill.level}
+                            progress={skill.level}
+                        />
                         <ul className='keywords'>
                             {skill.keywords.map((keyword) => (
                                 <li key={keyword}>{keyword}</li>
