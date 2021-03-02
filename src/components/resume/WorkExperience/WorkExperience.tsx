@@ -1,5 +1,6 @@
 import type { Work } from '../types'
 import ExpandibleListItem from '../../common/ExpandibleListItem'
+import TagList from '../../common/TagList'
 
 type Props = { experience: Array<Work> }
 function WorkExperience({ experience }: Props) {
@@ -45,14 +46,7 @@ function WorkExperience({ experience }: Props) {
                                         </a>
                                     </span>
                                 )}
-                                <ul className='keywords'>
-                                    {item.keywords.map((prop) => {
-                                        const key = prop
-                                            .replace(/\s/g, '')
-                                            .toLowerCase()
-                                        return <li key={key}>{prop}</li>
-                                    })}
-                                </ul>
+                                <TagList tags={item.keywords} />
                                 <ul className='highlights'>
                                     {item.highlights.map((prop) => {
                                         const key = prop

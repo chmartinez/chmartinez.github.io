@@ -1,5 +1,6 @@
 import type { Skill } from './types'
 import ProgressBar from '../common/ProgressBar'
+import TagList from '../common/TagList'
 
 type Props = { skills: Array<Skill> }
 
@@ -11,16 +12,12 @@ function Skills({ skills }: Props) {
             </header>
             <section id='skills'>
                 {skills.map((skill) => (
-                    <div className='item' key={skill.level}>
+                    <div className='skill item' key={skill.level}>
                         <ProgressBar
                             label={skill.level}
                             progress={skill.level}
                         />
-                        <ul className='keywords'>
-                            {skill.keywords.map((keyword) => (
-                                <li key={keyword}>{keyword}</li>
-                            ))}
-                        </ul>
+                        <TagList tags={skill.keywords} />
                     </div>
                 ))}
             </section>
