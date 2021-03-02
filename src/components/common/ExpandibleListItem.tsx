@@ -5,7 +5,7 @@ const StyledContainer = styled.div`
     margin-bottom: 1.2em;
 `
 
-const StyledHeader = styled.div`
+const StyledVisibleContent = styled.div`
     font-size: 1.38em;
     cursor: pointer;
 
@@ -44,7 +44,7 @@ function ExpandibleListItem({ expanded, content, expandedContent }: Props) {
 
     return (
         <StyledContainer>
-            <StyledHeader onClick={handleClick}>
+            <StyledVisibleContent onClick={handleClick}>
                 <div className='space-left'>
                     <span
                         className={`fa ${
@@ -53,7 +53,7 @@ function ExpandibleListItem({ expanded, content, expandedContent }: Props) {
                     ></span>
                 </div>
                 <div>{content()}</div>
-            </StyledHeader>
+            </StyledVisibleContent>
 
             {isExpanded && (
                 <div className='expanded-item'>{expandedContent()}</div>

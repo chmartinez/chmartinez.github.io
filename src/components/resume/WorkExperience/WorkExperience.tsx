@@ -1,5 +1,5 @@
-import Item from './Item'
 import type { Work } from '../types'
+import ExpandibleListItem from '../../common/ExpandibleListItem'
 
 type Props = { experience: Array<Work> }
 function WorkExperience({ experience }: Props) {
@@ -13,7 +13,51 @@ function WorkExperience({ experience }: Props) {
             </header>
             <section id='work'>
                 {experience.map((item, index) => (
-                    <Item key={item.id} item={item} open={index === 0} />
+                    <ExpandibleListItem
+                        key={item.id}
+                        expanded={index === 0}
+                        content={() => (
+                            <>
+                                <div className='position'>{item.position}</div>{' '}
+                                <div className='company'>{`at ${item.company}`}</div>
+                                <div className='date'>
+                                    <span className='startDate'>
+                                        {item.startDate}
+                                    </span>
+                                    <span className='endDate'>
+                                        {` - ${item.endDate ?? 'Current'}`}
+                                    </span>
+                                </div>
+                            </>
+                        )}
+                        expandedContent={() => (
+                            <>
+                                {item.website && (
+                                    <span className='website'>
+                                        <a href={item.website}>
+                                            {item.website}
+                                        </a>
+                                    </span>
+                                )}
+                                <ul className='keywords'>
+                                    {item.keywords.map((prop) => {
+                                        const key = prop
+                                            .replace(/\s/g, '')
+                                            .toLowerCase()
+                                        return <li key={key}>{prop}</li>
+                                    })}
+                                </ul>
+                                <ul className='highlights'>
+                                    {item.highlights.map((prop) => {
+                                        const key = prop
+                                            .replace(/\s/g, '')
+                                            .toLowerCase()
+                                        return <li key={key}>{prop}</li>
+                                    })}
+                                </ul>
+                            </>
+                        )}
+                    />
                 ))}
             </section>
         </section>
