@@ -1,0 +1,11 @@
+# Ignore artifacts:
+public
+build
+static
+
+# Ignore files:
+*.html
+*.md
+*.ico
+*.png
+*.txt
